@@ -1,0 +1,42 @@
+================================================================================
+METADATA ANALYSIS FOR: extrinsic.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: extrinsic.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/extrinsic.npy
+File Size: 9.41 KB
+Data Type: float32
+Shape: (198, 3, 4)
+Number of Dimensions: 3
+Total Elements: 2376
+Memory Usage: 9.28 KB
+Array Type: Regular NumPy Array
+Min Value: -1.6011695861816406
+Max Value: 1.0
+Mean Value: 0.19005431234836578
+Std Deviation: 0.5300697088241577
+Median Value: 0.029271548613905907
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First slice shape:
+(3, 4)
+
+First slice sample:
+[[ 1.0000000e+00 -5.7264235e-05  8.9447640e-05]
+ [ 5.7264308e-05  1.0000000e+00 -8.5125060e-07]
+ [-8.9447596e-05  8.5637276e-07  1.0000000e+00]]
+
+Last slice sample:
+[[ 0.987328   -0.00811431 -0.15848513]
+ [ 0.02037482  0.996908    0.0758898 ]
+ [ 0.15737931 -0.07815722  0.98444057]]
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:02

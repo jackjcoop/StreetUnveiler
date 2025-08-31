@@ -10,6 +10,7 @@ from scene.dataset_readers.waymo import readWaymoInfo
 from scene.dataset_readers.pandaset import readPandasetInfo
 from scene.dataset_readers.kitti import readKittiInfo
 from scene.dataset_readers.nuscenes import readNuScenesInfo
+from scene.dataset_readers.custom import readCustomSceneInfo
 
 
 sceneLoadTypeCallbacks = {
@@ -19,5 +20,6 @@ sceneLoadTypeCallbacks = {
     "Pandaset": readPandasetInfo,
     "Kitti": readKittiInfo,
     "NuScenes": readNuScenesInfo,
+    "Custom": readCustomSceneInfo,
 }
 

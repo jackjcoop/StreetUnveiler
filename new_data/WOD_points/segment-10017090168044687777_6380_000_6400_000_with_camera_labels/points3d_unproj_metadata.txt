@@ -1,0 +1,35 @@
+================================================================================
+METADATA ANALYSIS FOR: points3d_unproj.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: points3d_unproj.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/points3d_unproj.npy
+File Size: 1245191.19 KB
+Data Type: float64
+Shape: (198, 518, 518, 3)
+Number of Dimensions: 4
+Total Elements: 159384456
+Memory Usage: 1245191.06 KB
+Array Type: Regular NumPy Array
+Min Value: -0.48583555061095185
+Max Value: 2.4577829893141
+Mean Value: 0.32747574503233023
+Std Deviation: 0.5724315803582426
+Median Value: 0.059394100133465216
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First element:
+-0.1299314941894803
+
+Shape info:
+Array with 4 dimensions
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:11

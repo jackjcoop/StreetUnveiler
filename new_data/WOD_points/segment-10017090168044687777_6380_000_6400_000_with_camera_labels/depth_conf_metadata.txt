@@ -1,0 +1,42 @@
+================================================================================
+METADATA ANALYSIS FOR: depth_conf.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: depth_conf.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/depth_conf.npy
+File Size: 207531.97 KB
+Data Type: float32
+Shape: (198, 518, 518)
+Number of Dimensions: 3
+Total Elements: 53128152
+Memory Usage: 207531.84 KB
+Array Type: Regular NumPy Array
+Min Value: 1.0
+Max Value: 17.266721725463867
+Mean Value: 5.395776748657227
+Std Deviation: 4.552691459655762
+Median Value: 4.004514217376709
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First slice shape:
+(518, 518)
+
+First slice sample:
+[[1.0000222 1.0000315 1.0000013]
+ [1.0000079 1.0000103 1.       ]
+ [1.0000002 1.        1.       ]]
+
+Last slice sample:
+[[1.0591838 1.0597626 1.0229365]
+ [1.0651376 1.0485497 1.0079778]
+ [1.0252813 1.0071827 1.0015384]]
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:02

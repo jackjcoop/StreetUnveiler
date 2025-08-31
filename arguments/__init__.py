@@ -52,11 +52,19 @@ class ModelParams(ParamGroup):
         self._white_background = False
         self.data_device = "cuda"
         self.eval = False
+        # Custom point cloud arguments
+        self._custom_pc_path = ""
+        self.use_custom_init = False
+        self.custom_init_mode = "replace"  # "replace" or "augment"
+        self.custom_confidence_threshold = 0.5
+        self.custom_max_points_per_segment = 50000
         super().__init__(parser, "Loading Parameters", sentinel)
 
     def extract(self, args):
         g = super().extract(args)
         g.source_path = os.path.abspath(g.source_path)
+        if hasattr(g, 'custom_pc_path') and g.custom_pc_path:
+            g.custom_pc_path = os.path.abspath(g.custom_pc_path)
         return g
 
 class PipelineParams(ParamGroup):

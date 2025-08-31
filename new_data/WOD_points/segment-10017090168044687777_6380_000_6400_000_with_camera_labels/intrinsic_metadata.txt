@@ -1,0 +1,42 @@
+================================================================================
+METADATA ANALYSIS FOR: intrinsic.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: intrinsic.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/intrinsic.npy
+File Size: 7.09 KB
+Data Type: float32
+Shape: (198, 3, 3)
+Number of Dimensions: 3
+Total Elements: 1782
+Memory Usage: 6.96 KB
+Array Type: Regular NumPy Array
+Min Value: 0.0
+Max Value: 615.2666015625
+Mean Value: 189.62551879882812
+Std Deviation: 239.44264221191406
+Median Value: 1.0
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First slice shape:
+(3, 3)
+
+First slice sample:
+[[579.74884   0.      259.     ]
+ [  0.      572.0129  259.     ]
+ [  0.        0.        1.     ]]
+
+Last slice sample:
+[[576.41534   0.      259.     ]
+ [  0.      573.3962  259.     ]
+ [  0.        0.        1.     ]]
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:03

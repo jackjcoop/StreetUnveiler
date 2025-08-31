@@ -38,7 +38,36 @@ class Scene:
         self.test_cameras = {}
 
         self.scene_type = None
-        if os.path.exists(os.path.join(args.source_path, "sparse")):
+        
+        # Check for custom point cloud initialization first
+        if hasattr(args, 'use_custom_init') and args.use_custom_init and hasattr(args, 'custom_pc_path') and args.custom_pc_path:
+            custom_init_mode = getattr(args, 'custom_init_mode', 'replace')
+            
+            if custom_init_mode == 'replace':
+                print(f"Using custom point cloud initialization from {args.custom_pc_path}")
+                scene_info = sceneLoadTypeCallbacks["Custom"](args.custom_pc_path, args.images, args.eval)
+                self.scene_type = "custom"
+            elif custom_init_mode == 'augment':
+                print(f"Loading existing scene for augmentation with custom point cloud from {args.custom_pc_path}")
+                # Load the primary scene first
+                primary_scene_info = None
+                if os.path.exists(os.path.join(args.source_path, "sparse")):
+                    primary_scene_info = sceneLoadTypeCallbacks["Colmap"](args.source_path, args.images, args.eval)
+                    self.scene_type = "colmap_augmented"
+                elif os.path.exists(os.path.join(args.source_path, "scenario.pt")):
+                    primary_scene_info, camera_frame_dict = sceneLoadTypeCallbacks["Waymo"](args.source_path, args.images, args.colmap_path, args.eval)
+                    self.scene_type = "waymo_augmented"
+                    self.camera_frame_dict = camera_frame_dict
+                # Add other dataset types as needed for augmentation
+                else:
+                    raise ValueError("Augmentation mode requires a valid primary dataset (COLMAP, Waymo, etc.)")
+                
+                # Now augment with custom point cloud
+                from scene.dataset_readers.custom import readCustomSceneInfoAugmented
+                scene_info = readCustomSceneInfoAugmented(args.custom_pc_path, args.images, primary_scene_info.point_cloud, args.eval)
+            else:
+                raise ValueError(f"Invalid custom_init_mode: {custom_init_mode}. Must be 'replace' or 'augment'.")
+        elif os.path.exists(os.path.join(args.source_path, "sparse")):
             scene_info = sceneLoadTypeCallbacks["Colmap"](args.source_path, args.images, args.eval)
             self.scene_type = "colmap"
         elif os.path.exists(os.path.join(args.source_path, "transforms_train.json")):

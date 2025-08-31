@@ -1,0 +1,35 @@
+================================================================================
+METADATA ANALYSIS FOR: point_map.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: point_map.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/point_map.npy
+File Size: 622595.66 KB
+Data Type: float32
+Shape: (198, 518, 518, 3)
+Number of Dimensions: 4
+Total Elements: 159384456
+Memory Usage: 622595.53 KB
+Array Type: Regular NumPy Array
+Min Value: -0.8854002356529236
+Max Value: 3.6133251190185547
+Mean Value: 0.33686408400535583
+Std Deviation: 0.6096954941749573
+Median Value: 0.06887432932853699
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First element:
+-0.19170614
+
+Shape info:
+Array with 4 dimensions
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:06

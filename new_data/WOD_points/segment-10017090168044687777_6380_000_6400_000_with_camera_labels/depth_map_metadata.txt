@@ -1,0 +1,35 @@
+================================================================================
+METADATA ANALYSIS FOR: depth_map.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: depth_map.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/depth_map.npy
+File Size: 207531.97 KB
+Data Type: float32
+Shape: (198, 518, 518, 1)
+Number of Dimensions: 4
+Total Elements: 53128152
+Memory Usage: 207531.84 KB
+Array Type: Regular NumPy Array
+Min Value: 0.03606897592544556
+Max Value: 1.8713946342468262
+Mean Value: 0.2480839490890503
+Std Deviation: 0.1855323612689972
+Median Value: 0.18710383772850037
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First element:
+0.29056856
+
+Shape info:
+Array with 4 dimensions
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:02

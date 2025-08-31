@@ -1,0 +1,42 @@
+================================================================================
+METADATA ANALYSIS FOR: point_conf.npy
+================================================================================
+
+FILE METADATA:
+----------------------------------------
+File: point_conf.npy
+Full Path: /mnt/c/DevSoftware/StreetUnveiler/new_data/WOD_points/segment-10017090168044687777_6380_000_6400_000_with_camera_labels/point_conf.npy
+File Size: 207531.97 KB
+Data Type: float32
+Shape: (198, 518, 518)
+Number of Dimensions: 3
+Total Elements: 53128152
+Memory Usage: 207531.84 KB
+Array Type: Regular NumPy Array
+Min Value: 1.0
+Max Value: 7.006401062011719
+Mean Value: 1.6271858215332031
+Std Deviation: 1.0114843845367432
+Median Value: 1.01304292678833
+Contains NaN: False
+Contains Inf: False
+
+================================================================================
+SAMPLE DATA:
+----------------------------------------
+
+First slice shape:
+(518, 518)
+
+First slice sample:
+[[1.0072267 1.0010415 1.0003302]
+ [1.0008566 1.000371  1.0000813]
+ [1.0003    1.0000869 1.0000137]]
+
+Last slice sample:
+[[1.0040529 1.0004712 1.0001017]
+ [1.0003349 1.0021197 1.0003064]
+ [1.0001402 1.0003768 1.0000191]]
+
+================================================================================
+Analysis completed at: 2025-08-31T00:06:03

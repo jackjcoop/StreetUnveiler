@@ -1,0 +1,51 @@
+{
+  "validation_timestamp": "C:\\DevSoftware\\StreetUnveiler",
+  "total_segments": 1,
+  "segments_passed": 1,
+  "segments_failed": 0,
+  "segment_results": [
+    {
+      "segment_name": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels",
+      "required_files_found": [
+        "points3d_unproj.npy",
+        "intrinsic.npy",
+        "extrinsic.npy"
+      ],
+      "required_files_missing": [],
+      "optional_files_found": [
+        "depth_map.npy",
+        "point_map.npy",
+        "depth_conf.npy",
+        "point_conf.npy"
+      ],
+      "file_sizes": {
+        "points3d_unproj.npy": 1275075776,
+        "intrinsic.npy": 7256,
+        "extrinsic.npy": 9632,
+        "depth_map.npy": 212512736,
+        "point_map.npy": 637537952,
+        "depth_conf.npy": 212512736,
+        "point_conf.npy": 212512736
+      },
+      "validation_passed": true
+    }
+  ],
+  "image_results": [
+    {
+      "segment_name": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels",
+      "directory_exists": true,
+      "image_count": 198,
+      "image_extensions": [
+        "jpg"
+      ],
+      "sample_files": [
+        "00000.jpg",
+        "00001.jpg",
+        "00002.jpg",
+        "00003.jpg",
+        "00004.jpg"
+      ]
+    }
+  ],
+  "overall_status": "PASSED"
+}
